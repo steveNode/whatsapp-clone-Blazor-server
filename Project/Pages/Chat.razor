@@ -15,14 +15,35 @@
     </div>
 
     <div class="chat__body">
-
+        <p class="chat__message">
+            <span class="chat__name">Sender Name</span>
+            Hello World
+            <span class="chat__timeStamp">1:09 AM</span>
+        </p>
+        
+        <p class="chat__message chat__reciever">
+            <span class="chat__name">You</span>
+            Hello World
+            <span class="chat__timeStamp">1:09 AM</span>
+        </p>
 
     </div>
 
 
     <div class="chat_footer">
 
+        <span class="material-icons">insert_emoticon</span>
 
+        <input type="text" @bind-value="message" @bind-value:event="oninput" />
+
+        @if (string.IsNullOrEmpty(message))
+        {
+            <span class="material-icons">mic</span>
+        }
+        else
+        {
+            <button></button>
+        }
     </div>
 
 

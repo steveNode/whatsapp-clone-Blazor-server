@@ -1,6 +1,7 @@
 ﻿.chat {
     flex: 0.65;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .material-icons {
@@ -29,5 +30,43 @@
 }
 
 .chat__headerRight {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+}
 
+.chat__body {
+    flex: 1;
+    background-image: url("/background/default-bg.png");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: auto;
+}
+
+.chat__message {
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.chat__name {
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+
+.chat__timeStamp {
+    margin-left: 10px;
+    font-size: xx-small;
+}
+
+.chat__reciever {
+    margin-left: auto;
+    background-color: #dcf8c6;
 }

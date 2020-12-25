@@ -9,5 +9,8 @@ namespace Project.Pages
     public partial class Chat : ComponentBase
     {
 
+
+
+        string message = "";
     }
 }
