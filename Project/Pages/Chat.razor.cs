@@ -12,5 +12,12 @@ namespace Project.Pages
 
 
         string message = "";
+
+        protected async Task SendMessage()
+        {
+            message += message;
+        }
+
+
     }
 }

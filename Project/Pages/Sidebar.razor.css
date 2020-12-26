@@ -37,6 +37,11 @@
     width: 80%;
 }
 
+.sidebar__searchContainer > input:focus {
+    outline: none;
+}
+
+
 .sidebar__header {
     display: flex;
     justify-content: space-between;
@@ -93,3 +98,4 @@
     background-color: #000000;
   border-radius: 10px;
 }
+

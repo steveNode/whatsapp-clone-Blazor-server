@@ -20,7 +20,7 @@
             Hello World
             <span class="chat__timeStamp">1:09 AM</span>
         </p>
-        
+
         <p class="chat__message chat__reciever">
             <span class="chat__name">You</span>
             Hello World
@@ -30,19 +30,17 @@
     </div>
 
 
-    <div class="chat_footer">
+    <div class="chat__footer">
 
         <span class="material-icons">insert_emoticon</span>
 
-        <input type="text" @bind-value="message" @bind-value:event="oninput" />
-
+        <form @onsubmit="SendMessage">
+            <input type="text" @bind-value="message" @bind-value:event="oninput" placeholder="Enter a Message" />
+            <button type="submit">Send Message</button>
+        </form>
         @if (string.IsNullOrEmpty(message))
         {
             <span class="material-icons">mic</span>
-        }
-        else
-        {
-            <button></button>
         }
     </div>
 
